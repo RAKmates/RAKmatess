@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RAK.Ai – Reviewer Generator</title>
+<link rel="stylesheet" href="style.css"></head><body>
+
+<section id="auth"><div class="card">
+ <div class="logo">RAK<i>.</i><b>Ai</b></div>
+ <p class="mut" style="margin:6px 0 0">An AI-based, student-friendly reviewer generator for Cabiao Senior High School. Log in or sign up to enter your dashboard.</p>
+ <div class="tabs"><button id="tL" class="on">Log in</button><button id="tS">Sign up</button></div>
+ <div id="nmW" style="display:none"><label>Full name</label><input id="nm" autocomplete="name"></div>
+ <label>Email</label><input id="em" type="email" autocomplete="email">
+ <label>Password</label><input id="pw" type="password" autocomplete="current-password">
+ <button class="btn" id="go" style="width:100%;margin-top:16px">Log in</button>
+ <div class="err" id="aerr"></div>
+</div></section>
+
+<div id="app">
+ <aside id="side"><div class="logo">RAK<i>.</i><b>Ai</b></div>
+  <button class="nav" data-v="dash">🏠 Dashboard</button>
+  <button class="nav" data-v="reviewer">📘 Reviewer Generator</button>
+  <button class="nav" data-v="practice">📝 Practice Questions</button>
+  <button class="nav" data-v="games">🎮 Review Games</button>
+  <button class="nav" data-v="organizer">🗂️ Organizer</button>
+  <button class="nav" data-v="agent">🤖 AI Agent</button>
+  <button class="nav" data-v="settings">⚙️ Settings</button>
+  <div style="flex:1"></div>
+  <div class="mut" style="padding:8px 12px;font-size:13px" id="who"></div>
+  <button class="nav" id="out">🚪 Log out</button>
+ </aside>
+ <main>
+  <header>
+   <button class="btn g s" id="menu">☰</button>
+   <div class="sw"><input id="q" placeholder="🔍 Search saved reviewers &amp; questions…" autocomplete="off"><div id="rec"></div></div>
+  </header>
+  <div id="view"></div>
+ </main>
+</div>
+
+<script src="app.js"></script></body></html>
